@@ -1,6 +1,7 @@
 import os
 import tempfile
 import streamlit as st
+import pysqlite3 as sqlite3
 from decouple import config
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.chains.retrieval import create_retrieval_chain
@@ -10,6 +11,9 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_groq import ChatGroq
 from langchain_openai import OpenAIEmbeddings
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 # Variavél de ambiente
 os.environ["GROQ_API_KEY"] = config("GROQ_API_KEY")
