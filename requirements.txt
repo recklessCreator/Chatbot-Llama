@@ -58,6 +58,7 @@ pydantic-settings==2.7.1
 pydantic_core==2.27.2
 pydeck==0.9.1
 Pygments==2.18.0
+pysqlite3-binary==0.5.4
 python-dateutil==2.9.0.post0
 python-decouple==3.8
 python-dotenv==1.0.1
