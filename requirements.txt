@@ -8,6 +8,8 @@ blinker==1.9.0
 cachetools==5.5.0
 certifi==2024.12.14
 charset-normalizer==3.4.1
+chroma-hnswlib==0.7.6
+chromadb==0.5.23
 click==8.1.8
 colorama==0.4.6
 dataclasses-json==0.6.7
@@ -28,6 +30,7 @@ jsonpointer==3.0.0
 jsonschema==4.23.0
 jsonschema-specifications==2024.10.1
 langchain==0.3.14
+langchain-chroma==0.2.0
 langchain-community==0.3.14
 langchain-core==0.3.29
 langchain-groq==0.2.3
